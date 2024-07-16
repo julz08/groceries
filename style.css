@@ -41,6 +41,25 @@
     text-align: center;
 }
 
+img{
+    transition: 1.5s;
+}
+/* hover */
+img:hover{
+    background-color: rgb(187, 153, 127);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    height: 220px;
+}
+
+h2{
+    transition: 1s
+}
+
 h2:hover{
-    background-color: darkgreen
+    background-color: rgb(119, 91, 67);
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
 }
