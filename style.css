@@ -9,6 +9,11 @@
     color: rgb(181, 220, 178);
     font-size: 28px;
     border-radius: 5px;
+
+    animation-name: colorswitch;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite
 }
 
 #flex {
@@ -63,3 +68,10 @@ h2:hover{
     padding: 10px;
     border-radius: 10px;
 }
+
+@keyframes colorswitch{
+    from {background-color: rgb(62, 102, 69);}
+    to {background-color:rgb(181, 220, 178)}
+    from {color: rgb(181, 220, 178);}
+    to {color: rgb(62, 102, 69);}
+}   
