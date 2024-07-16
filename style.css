@@ -11,10 +11,23 @@
     border-radius: 5px;
 
     animation-name: colorswitch;
-    animation-duration: 3s;
-    animation-direction: alternate;
+    animation-duration: 10s;
     animation-iteration-count: infinite
 }
+
+@keyframes colorswitch{
+    0% {color: beige; background-color: rgb(131, 116, 73);}
+    10% {color: rgb(234, 245, 220); background-color: rgb(86, 131, 73);}
+    20% {color: rgb(220, 245, 225); background-color: rgb(73, 131, 80);}
+    30% {color: rgb(220, 245, 245); background-color: rgb(73, 127, 131);}
+    40% {color: rgb(220, 223, 245); background-color: rgb(76, 73, 131);}
+    50% {color: rgb(230, 220, 245); background-color: rgb(97, 73, 131);}
+    60% {color: rgb(244, 220, 245); background-color: rgb(116, 73, 131);}
+    70% {color: rgb(245, 220, 238); background-color: rgb(131, 73, 110);}
+    80% {color: rgb(245, 220, 224); background-color: rgb(131, 73, 75);}
+    90% {color: rgb(245, 232, 220); background-color: rgb(131, 104, 73);}
+    100% {color: beige; background-color: rgb(131, 115, 73);}
+}   
 
 #flex {
     display: flex;
@@ -29,7 +42,24 @@
     background-color: beige;
     padding: 10px;
     border-radius: 10px;
-    color: rgb(44, 32, 4)
+    color: rgb(151, 131, 111);
+    animation-name: lightcolors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite
+}
+
+@keyframes lightcolors {
+    0% {background-color: beige;}
+    10% {background-color: rgb(234, 245, 220);}
+    20% {background-color: rgb(220, 245, 225);}
+    30% {background-color: rgb(220, 245, 245);}
+    40% {background-color: rgb(220, 223, 245);}
+    50% {background-color: rgb(230, 220, 245);}
+    60% {background-color: rgb(244, 220, 245);}
+    70% {background-color: rgb(245, 220, 238);}
+    80% {background-color: rgb(245, 220, 224);}
+    90% {background-color: rgb(245, 232, 220);}
+    100% {background-color: beige;}
 }
 .item {
     display:flex;
@@ -46,12 +76,12 @@
     text-align: center;
 }
 
-img{
+.product{
     transition: 1.5s;
 }
 /* hover */
-img:hover{
-    background-color: rgb(187, 153, 127);
+.product:hover{
+    background-color: rgb(255, 255, 255, 0.769);
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
@@ -63,15 +93,7 @@ h2{
 }
 
 h2:hover{
-    background-color: rgb(119, 91, 67);
-    color: whitesmoke;
+    background-color:rgba(255, 255, 255, 0.784);
     padding: 10px;
     border-radius: 10px;
 }
-
-@keyframes colorswitch{
-    from {background-color: rgb(62, 102, 69);}
-    to {background-color:rgb(181, 220, 178)}
-    from {color: rgb(181, 220, 178);}
-    to {color: rgb(62, 102, 69);}
-}   
